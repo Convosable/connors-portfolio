@@ -5,7 +5,7 @@ const Projects = () => {
     <div>
       <h1>Portfolio</h1>
       <h2>Projects I have created:</h2>
-      <p>insert links to project components?</p>
+      <p>insert links to project components</p>
     </div>
   )
 }
