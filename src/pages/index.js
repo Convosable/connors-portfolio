@@ -5,6 +5,7 @@ import {header, btn} from '../styles/home.module.css';
 
 
 export default function Home() {
+
   return (
     <Layout>
       <section className={header}>
@@ -15,6 +16,7 @@ export default function Home() {
           <Link className={btn} to='/projects'>My Portfolio Projects</Link>
         </div>
         <img src="connorpic.jpeg" alt="persona photo" style={{ maxWidth: '100%'}}/>
+        <p></p>
       </section>
     </Layout>
   )
