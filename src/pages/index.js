@@ -14,6 +14,7 @@ export default function Home() {
           <p>Full Stack Software Engineer based in Long Beach, California.</p>
           <Link className={btn} to='/projects'>My Portfolio Projects</Link>
         </div>
+        <img src="connorpic.jpeg" alt="persona photo" style={{ maxWidth: '100%'}}/>
       </section>
     </Layout>
   )
