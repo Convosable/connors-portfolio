@@ -2,8 +2,9 @@
 title: LBR Boudlering League
 stack: Javascript, React.js, Ruby on Rails, HTML & CSS
 slug: lbr-boudlering-league
-date: 2023-12-03T00:00:00+00:00    
-
+date: 2023-12-03T00:00:00+00:00
+thumb: ../images/thumbs/lbr.png
+featuredImg: ../images/featured/lbr-banner.png
 ---
 
 ^^ Front matter: adds metadata or extra information about a file 
