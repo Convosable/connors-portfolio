@@ -31,7 +31,7 @@ export default Projects;
 //export page query
 export const pageQuery = graphql`
   query ProjectsPage {
-    allMarkdownRemark {
+    allMarkdownRemark(sort: {frontmatter: {date: DESC}}) {
       nodes {
         html
         frontmatter {
