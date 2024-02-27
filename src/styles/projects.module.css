@@ -29,3 +29,7 @@
     color: #ccc;
     margin-top: 4px;
 }
+
+.projects img {
+    border-radius: 10px;
+}
