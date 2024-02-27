@@ -1,11 +1,25 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { Link, graphql, useStaticQuery } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';  
 
 
-const Navbar = ( {icons} ) => {
-  const github = icons.nodes[1].childImageSharp.gatsbyImageData
-  const linkedIn = icons.nodes[0].childImageSharp.gatsbyImageData
+const Navbar = () => {
+
+  const iconData = useStaticQuery(graphql`
+    query Icons {
+      icons: allFile( filter: {sourceInstanceName: {eq: "images"}, relativeDirectory: {eq: "icons"}, extension: {regex: "/(jpg)|(jpeg)|(png)|(gif)/"}}) {
+        nodes {
+          childImageSharp {
+            gatsbyImageData
+          }
+        }
+      }
+    }
+  `)
+
+  const github = iconData.icons.nodes[1].childImageSharp.gatsbyImageData
+  const linkedIn = iconData.icons.nodes[0].childImageSharp.gatsbyImageData
+
   return (
     <nav>
         <div className='icons'>

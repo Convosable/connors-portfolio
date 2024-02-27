@@ -2,10 +2,10 @@ import React from 'react'
 import Navbar from './Navbar';
 import '../styles/global.css'
 
-const Layout = ({ children, icons }) => {
+const Layout = ({ children }) => {
   return (
     <div className='layout'>
-        <Navbar icons = {icons}/>
+        <Navbar />
         <div className='content'>
             {children}
         </div>

@@ -8,13 +8,9 @@ import {header, btn} from '../styles/home.module.css';
 export default function Home( {data} ) {
 
   const profileImage = data.profileImage.childImageSharp.gatsbyImageData;
-  const icons = data.icons
-
-  console.log(data);
-
 
   return (
-    <Layout icons = {icons}>
+    <Layout >
       <section className={header}>
         <div>
           <h2>Learn, Develop, Deploy... Repeat</h2>
@@ -22,14 +18,14 @@ export default function Home( {data} ) {
           <p>Full Stack Software Engineer based in Long Beach, California.</p>
           <Link className={btn} to='/projects'>My Portfolio Projects</Link>
         </div>
-        <GatsbyImage image={profileImage} alt='connor-pic' />
+        <GatsbyImage image={getImage(profileImage)} alt='connor-pic' />
       </section>
     </Layout>
   )
 }
 
 export const query = graphql`
-  query {
+  query ProfileImage {
     profileImage: file(relativePath: {eq: "connorpic.jpeg"}) {
       childImageSharp {
         gatsbyImageData(
@@ -37,15 +33,6 @@ export const query = graphql`
           placeholder: BLURRED
           formats: [AUTO, WEBP]
         )
-      }
-    }
-    icons: allFile(
-      filter: {sourceInstanceName: {eq: "images"}, relativeDirectory: {eq: "icons"}, extension: {regex: "/(jpg)|(jpeg)|(png)|(gif)/"}}
-    ) {
-      nodes {
-        childImageSharp {
-          gatsbyImageData
-        }
       }
     }
   }
