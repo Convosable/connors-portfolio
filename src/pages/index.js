@@ -6,7 +6,7 @@ import {header, btn} from '../styles/home.module.css';
 
 
 export default function Home( {data} ) {
-  
+
   return (
     <Layout>
       <section className={header}>
@@ -27,10 +27,10 @@ export const query = graphql`
     file(relativePath: {eq: "connorpic.jpeg"}) {
       childImageSharp {
         gatsbyImageData(
-            layout: FULL_WIDTH
-            placeholder: BLURRED
-            formats: [AUTO, WEBP]
-          )
+          layout: FULL_WIDTH
+          placeholder: BLURRED
+          formats: [AUTO, WEBP]
+        )
       }
     }
   }
