@@ -52,6 +52,15 @@ nav a:hover {
     border-color: white;
 }
 
+nav .icons {
+    display: flex;
+    align-items: center;
+}
+
+nav .icons a {
+    max-width: 40px;
+}
+
 footer p{
     text-align: center;
     color: #bbb;

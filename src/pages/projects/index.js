@@ -5,8 +5,9 @@ import { Link, graphql } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';  
 
 const Projects = ({ data }) => {
-  console.log(data.projects.nodes[0].frontmatter.thumb.childImageSharp.gatsbyImageData)
+
   const allProjects = data.projects.nodes;
+
   return (
     <Layout>
       <div className={portfolio}>
