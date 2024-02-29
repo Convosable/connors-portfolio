@@ -1,6 +1,6 @@
 ---
 title: My Pantry
-stack: Javascript, React.js, HTML, & CSS
+stack: Javascript, React.js
 slug: my-pantry
 date: 2023-04-02T00:00:00+00:00
 thumb: ../images/thumbs/mypantry.jpeg

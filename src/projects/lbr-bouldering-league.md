@@ -1,25 +1,36 @@
 ---
 title: LBR Boudlering League
-stack: Javascript, React.js, Ruby on Rails, HTML & CSS
+stack: Javascript, React.js, Ruby on Rails
 slug: lbr-boudlering-league
 date: 2023-12-03T00:00:00+00:00
 thumb: ../images/thumbs/lbr.png
 featuredImg: ../images/featured/lbr-banner.png
+description: This project streamlines the user experience for Long Beach Rising's Bouldering League by automating key processes. Users can easily sign up, join or create teams, and log completed climbs. The app calculates points based on individual handicaps, updating leaderboards for each team. This automation promotes transparency within the league, boosts member engagement, and significantly reduces the manual workload previously required.
+screenshots:
+    - '../images/screenshots/climbing-sets.png'
+    - '../images/screenshots/lbr-leaderboard.png'
+    - '../images/screenshots/lbr-profile.png'
+github: https://github.com/Convosable/LBR-Bouldering-League
+demo: https://youtu.be/Q8ahyiTzezA
+liveProject: https://lbr-bouldering-league.onrender.com/
+
 ---
 
-^^ Front matter: adds metadata or extra information about a file 
+### Description
 
-**Bold TExt**, double asterix make the text bold
+This project streamlines the user experience for Long Beach Rising's Bouldering League by automating key processes. Users can easily sign up, join or create teams, and log completed climbs. The app calculates points based on individual handicaps, updating leaderboards for each team. This automation promotes transparency within the league, boosts member engagement, and significantly reduces the manual workload previously required.
 
-*Italics*, single asterix makle the text italics
+### Screenshots
 
-# Header
+![climbing-sets](../images/climbing-sets.jpg)
+![Admin](path/to/image.jpg)
+![Leaderboards](path/to/image.jpg)
 
-like an h1
+### Links 
 
-## Header2
+<a href="https://github.com/Convosable/LBR-Bouldering-League" target="_blank" rel="noopener noreferrer">GitHub</a>
+<a href="https://youtu.be/Q8ahyiTzezA" target="_blank" rel="noopener noreferrer">Demo</a>
+<a href="https://lbr-bouldering-league.onrender.com/" target="_blank" rel="noopener noreferrer">Live Project</a>
 
-like a h2
 
-guides.github.com/features/mastering-markdown/
-
+// add everything to frontmattter???

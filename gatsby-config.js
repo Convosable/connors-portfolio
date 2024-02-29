@@ -27,10 +27,5 @@ module.exports = {
         path: `${__dirname}/src/projects/`,
       },
     },
-  ],
-  siteMetadata: {
-    title: "Connor Vosberg",
-    description: 'Web Dev Portfolio',
-    copyright: "This websirte is copyright 2024 Connor Vosberg" 
-  }
+  ]
 }
