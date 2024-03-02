@@ -7,8 +7,6 @@ import { graphql } from 'gatsby';
 
 const ProjectDetails = ( {data} ) => {
 
-    // const { html } = data.markdownRemark
-
     const { title, stack, featuredImg, description, github, liveProject, demo, screenshots } = data.markdownRemark.frontmatter
     console.log(screenshots)
 
@@ -32,9 +30,8 @@ const ProjectDetails = ( {data} ) => {
                 <div>
                     <a href= {github} target="_blank" rel="noopener noreferrer">GitHub</a>
                     <a href= {demo} target="_blank" rel="noopener noreferrer">Demo</a>
-                    { {liveProject} ? <a href={liveProject} target="_blank" rel="noopener noreferrer">Live Project</a> : null }
+                    { liveProject ? <a href={liveProject} target="_blank" rel="noopener noreferrer">Live Project</a> : null }
                 </div>
-                {/* <div className={styles.html} dangerouslySetInnerHTML={{ __html: html }} /> */}
             </div>
         </Layout>
     )
@@ -75,23 +72,6 @@ query ProjectDetails($slug: String) {
     }
   }
 `
-// export const query = graphql`
-//     query ProjectDetails($slug:String) {
-//         markdownRemark(frontmatter: {slug: {eq: $slug}}) {
-//             html
-//                 frontmatter {
-//                     stack
-//                     title
-//                     featuredImg {
-//                         childImageSharp {
-//                             gatsbyImageData(
-//                                 layout: FULL_WIDTH
-//                             )
-//                         }
-//                     }
-//                 }
-//         }
-//     }
 
 
 //issue ive run into: when importing an image to the markdown files, the image doesnt display, so i decided to pass everything through frontmatter and query via graphql for all the project data
