@@ -7,9 +7,10 @@ import { graphql } from 'gatsby';
 
 const ProjectDetails = ( {data} ) => {
 
-    const { html } = data.markdownRemark
+    // const { html } = data.markdownRemark
 
     const { title, stack, featuredImg, description, github, liveProject, demo, screenshots } = data.markdownRemark.frontmatter
+    console.log(screenshots)
 
     return (
         <Layout>
@@ -50,7 +51,11 @@ query ProjectDetails($slug: String) {
         title
         featuredImg {
           childImageSharp {
-            gatsbyImageData(layout: FULL_WIDTH)
+            gatsbyImageData(
+                layout: FULL_WIDTH
+                placeholder: BLURRED
+                formats: [AUTO, WEBP]
+            )
           }
         }
         github
@@ -59,7 +64,11 @@ query ProjectDetails($slug: String) {
         demo
         screenshots {
           childImageSharp {
-            gatsbyImageData(layout: FULL_WIDTH)
+            gatsbyImageData(
+                layout: FULL_WIDTH
+                placeholder: BLURRED
+                formats: [AUTO, WEBP]
+            )
           }
         }
       }
