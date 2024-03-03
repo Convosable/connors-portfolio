@@ -66,3 +66,21 @@ footer p{
     color: #bbb;
     margin: 40px auto;
 }
+
+@media (max-width: 768px) {
+    nav {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    nav .icons {
+        text-align: center;
+        justify-content: center;
+    }
+
+    nav .links {
+        text-align: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
