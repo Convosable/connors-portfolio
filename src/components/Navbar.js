@@ -17,8 +17,8 @@ const Navbar = () => {
     }
   `)
 
-  const github = iconData.icons.nodes[1].childImageSharp.gatsbyImageData
-  const linkedIn = iconData.icons.nodes[0].childImageSharp.gatsbyImageData
+  const linkedIn = iconData.icons.nodes[1].childImageSharp.gatsbyImageData
+  const github = iconData.icons.nodes[0].childImageSharp.gatsbyImageData
 
   return (
     <nav>

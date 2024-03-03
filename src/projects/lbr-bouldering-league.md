@@ -1,7 +1,7 @@
 ---
-title: LBR Boudlering League
+title: LBR Bouldering League
 stack: Javascript, React.js, Ruby on Rails
-slug: lbr-boudlering-league
+slug: lbr-bouldering-league
 date: 2023-12-03T00:00:00+00:00
 thumb: ../images/thumbs/lbr.png
 featuredImg: ../images/featured/lbr-banner.png
