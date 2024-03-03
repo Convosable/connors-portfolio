@@ -33,3 +33,23 @@
 .projects img {
     border-radius: 10px;
 }
+
+@media (max-width: 768px) {
+    .projects {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        align-items: center;
+    }
+
+    .portfolio h2 {
+        font-size: 3em;
+        margin-top: 20px;
+    }
+    
+    .portfolio h3 {
+        font-size: 2em;
+        font-weight: 400;
+        margin-top: 20px;
+    }
+  }
