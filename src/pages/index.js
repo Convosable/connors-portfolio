@@ -24,6 +24,15 @@ export default function Home( {data} ) {
   )
 }
 
+export const Head = () => (
+  <>
+    <meta charset="UTF-8"/>
+    <meta name="description" content="Connor Vosberg's professional protfolio page."></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Connor Vosberg - Portfolio</title>
+  </>
+)
+
 export const query = graphql`
   query ProfileImage {
     profileImage: file(relativePath: {eq: "connorpic.jpeg"}) {
