@@ -14,8 +14,7 @@ export default function Home( {data} ) {
       <section className={header}>
         <div>
           <h2>Learn, Develop, Deploy... Repeat</h2>
-          <h3>Flatiron School Graduate</h3>
-          <p>Full Stack Software Engineer based in Long Beach, California.</p>
+          <h3>Full Stack Software Engineer based in Long Beach, California.</h3>
         </div>
         <GatsbyImage image={getImage(profileImage)} alt='connor-pic' />
       </section>
